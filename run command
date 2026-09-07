@@ -1,1 +1,3 @@
-g++ -std=c++17 -nostdinc -I/usr/include/c++/7 -I/usr/include/x86_64-linux-gnu/c++/7 -I/usr/include/c++/7/backward -I/usr/lib/gcc/x86_64-linux-gnu/7/include -I/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include APIManager.cpp location.cpp main.cpp weather.cpp weatherDataProcessor.cpp weatherEnhancement.cpp weatherStorageManager.cpp -o weather.exe -lcurl -pthread
+g++ -std=c++17 -pthread *.cpp -o weather -lcurl
+export WEATHER_API_KEY="d6b0b93b40fc4dc2b5441134260709"
+./weather
